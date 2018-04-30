@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kongqw.ObjectDetectingView
+        android:id="@+id/photograph_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="swapCamera"
+        android:text="Switch the camera" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face Detection" />
+
+        <RadioButton
+            android:id="@+id/rb_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eye detection" />
+
+        <RadioButton
+            android:id="@+id/rb_upper_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upper Body Detection" />
+
+        <RadioButton
+            android:id="@+id/rb_lower_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lower body detection" />
+
+        <RadioButton
+            android:id="@+id/rb_full_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whole body test" />
+
+        <RadioButton
+            android:id="@+id/rb_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smile test" />
+
+    </RadioGroup>
+
+</RelativeLayout>

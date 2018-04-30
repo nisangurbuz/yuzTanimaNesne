@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="Tez.aslinisan.TezProje">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="Tez.aslinisan.TezProje.MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 目标检测Activity -->
+        <activity
+            android:name="Tez.aslinisan.TezProje.ObjectDetectingActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <!-- 目标追踪Activity -->
+        <activity
+            android:name="Tez.aslinisan.TezProje.ObjectTrackingActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name="Tez.aslinisan.TezProje.BaseActivity"></activity>
+    </application>
+
+</manifest>
